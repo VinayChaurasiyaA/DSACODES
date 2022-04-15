@@ -14,9 +14,8 @@ public class MaxMin {
     static int min(int[] arr, int n) {
         if (n == 0) {
             return arr[0];
-        } else {
-            return Math.min(arr[n-1], min(arr,n-1));
-        }
+        } else
+            return Math.min(arr[n - 1], min(arr, n - 1));
     }
     static int max(int[] arr , int n){
         if (n==0){

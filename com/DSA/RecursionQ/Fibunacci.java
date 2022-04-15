@@ -2,8 +2,8 @@ package com.DSA.RecursionQ;
 
 public class Fibunacci {
     public static void main(String[] args) {
-        fibo(2);
-        System.out.println(fibo(2));
+        fibo(5);
+        System.out.println(fibo(5));
 
     }
     static int fibo(int n){
