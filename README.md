@@ -12,11 +12,11 @@ new keyword : is used to create the memory of the object is allocated dynamicall
 
 ### constructor :
 constructor is the special type of function, they are used to inititalize the data of the object.
-It automatically get calls whenever we create constructor
+It automatically gets calls whenever we create constructor
 Properties : 
 - Class name should be same as constructor
 - Constructor does not return any value not even void . No return data type
-- There are 2 types of constructor parameterized and non-parameterized : parameterized has any number of parameter whereas no parameter is non one.
+- There are 2 types of constructor parameterized and non-parameterized : parameterized has any number of parameter whereas no parameter is non-one.
 
 ### Defualt constructor: 
 If class does not have any constructor java creates one default constructor.
@@ -28,8 +28,7 @@ Method Overloading:
 If we are making similar method which already exists with different parameter or differnt return datatype.
 
 Method Overriding:
-If we are making similar method which already exits with same signature. Then it is method overridding
-Overridding can change the implenetation of the function or constructor according to the usecase.(they can redine the function).
+If we are making similar method which already exits with same signature. Then it is method overriding can change the implementation of the function or constructor according to the usecase.(they can redine the function).
 We can even put return data type of parent as "classname" of that and in that case we can ever change the return data type of the child too , to it's classname.
 
 ## What is signature?
@@ -41,8 +40,8 @@ We can even put return data type of parent as "classname" of that and in that ca
 They must be written in first line of the constructor.
 Refers to current invoking object.
 **this()** -> calling for current class constructor from inside fifernt constructor of same class.
-It is use for refering the object in more lame language.
-this consider it as a object and now consider -> as the function call and it'll make the object there.
+It is use for referring the object in more lame language.
+this considers it as a object and now consider -> as the function call and it'll make the object there.
 current object's variable , whenever parent has the same name as the provided in argument.
 This is very helpful for jumping from one constructor to another.
 
@@ -154,8 +153,9 @@ OS leve is the multi processing, whereas in a single process there can be n thre
 Using Runnable -> it is a interface which has a run() method.
 Using thread class -> it is already given by java.
 1 way is make a class and implement Runnab;e interface and override run method.
-2 And or we can extends thread class and write the class/Override the run method.
-eg.
+2 And or we can extend thread class and write the class/Override the run method.
+e.g.
+
 1. 
 ```
 class Mythread implements Runnable
@@ -190,10 +190,10 @@ t.start();
 Daemon Thread:
 Daemon thread in java is a service provider thread that provides service to the user thread. There whole life cycle is dependent on another thread.
 Garbage collector is best example of DAEMON thread.
-we can make any thread as DAEMON THREAD BY JUST CALLING .. setDaemon(Boolen)
+we can make any thread as DAEMON THREAD BY JUST CALLING .. setDaemon(Boolean)
 to check whether the thread is daemon or not we can go into run and check by 
 ``` public Boolean isDaemon() ```
 
 Synchronized, Inter-thread communication;
-Consider 1 producer and 1 consumer and producer can only produce 1 thread at a time/ process.. Now we have to make a thread which only consumes after producer has produced exactly 1 process.. Is called producer consumer problem/ synchronized thread.
-Sychronized will make the thread in such a way until those threads are terminated no thread can participate.
+Consider 1 producer and 1 consumer and producer can only produce 1 thread at a time/ process. Now we have to make a thread which only consumes after producer has produced exactly 1 process.. Is called producer consumer problem/ synchronized thread.
+Synchronized will make the thread in such a way until those threads are terminated no thread can participate.
